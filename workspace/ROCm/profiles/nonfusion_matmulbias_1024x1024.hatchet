@@ -3,62 +3,1049 @@
     {
         "children": [
             {
-                "children": [],
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "children": [
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "matmul_kernel [M=1024, N=1024, K=1024] [BM=128, BN=128 BK=64]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 12582912,
+                                                                                                                            "count": 2,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 4294967296.0,
+                                                                                                                            "time (ns)": 58292
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:149@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [],
+                                                                                "frame": {
+                                                                                    "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIiEESt5arrayIPcLm1EEEEviT0_T1_",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {
+                                                                                    "count": 10,
+                                                                                    "device_id": "0",
+                                                                                    "device_type": "HIP",
+                                                                                    "time (ns)": 496046
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:877@clear_cache",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:159@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "matmul_kernel [M=1024, N=1024, K=1024] [BM=128, BN=128 BK=64]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 62914560,
+                                                                                                                            "count": 10,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 21474836480.0,
+                                                                                                                            "time (ns)": 285810
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:160@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "matmul_kernel [M=1024, N=1024, K=1024] [BM=128, BN=128 BK=64]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 1887436800,
+                                                                                                                            "count": 300,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 644245094400.0,
+                                                                                                                            "time (ns)": 5876382
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:172@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [],
+                                                                                "frame": {
+                                                                                    "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIiEESt5arrayIPcLm1EEEEviT0_T1_",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {
+                                                                                    "count": 1203,
+                                                                                    "device_id": "0",
+                                                                                    "device_type": "HIP",
+                                                                                    "time (ns)": 50177875
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:877@clear_cache",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:182@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "matmul_kernel [M=1024, N=1024, K=1024] [BM=128, BN=128 BK=64]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 7568621568,
+                                                                                                                            "count": 1203,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 2583422828544.0,
+                                                                                                                            "time (ns)": 29764721
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:185@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            }
+                                                        ],
+                                                        "frame": {
+                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:164@_bench",
+                                                            "type": "function"
+                                                        },
+                                                        "metrics": {}
+                                                    }
+                                                ],
+                                                "frame": {
+                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:229@benchmark",
+                                                    "type": "function"
+                                                },
+                                                "metrics": {}
+                                            }
+                                        ],
+                                        "frame": {
+                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:240@run",
+                                            "type": "function"
+                                        },
+                                        "metrics": {}
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "children": [
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [],
+                                                                                        "frame": {
+                                                                                            "name": "matmul_kernel [M=1024, N=1024, K=1024] [BM=128, BN=128 BK=64]",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {
+                                                                                            "bytes": 6291456,
+                                                                                            "count": 1,
+                                                                                            "device_id": "0",
+                                                                                            "device_type": "HIP",
+                                                                                            "flops16": 2147483648.0,
+                                                                                            "time (ns)": 20888
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            }
+                                                        ],
+                                                        "frame": {
+                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                            "type": "function"
+                                                        },
+                                                        "metrics": {}
+                                                    }
+                                                ],
+                                                "frame": {
+                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                    "type": "function"
+                                                },
+                                                "metrics": {}
+                                            }
+                                        ],
+                                        "frame": {
+                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:252@run",
+                                            "type": "function"
+                                        },
+                                        "metrics": {}
+                                    }
+                                ],
+                                "frame": {
+                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:370@<lambda>",
+                                    "type": "function"
+                                },
+                                "metrics": {}
+                            }
+                        ],
+                        "frame": {
+                            "name": "/workspace/user/triton/matmulbias.py:222@nonfusion_matmulbias",
+                            "type": "function"
+                        },
+                        "metrics": {}
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "children": [
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=128]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 12607488,
+                                                                                                                            "count": 6,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 12582912.0,
+                                                                                                                            "time (ns)": 25699
+                                                                                                                        }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=256]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 12607488,
+                                                                                                                            "count": 6,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 12582912.0,
+                                                                                                                            "time (ns)": 30550
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:149@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [],
+                                                                                "frame": {
+                                                                                    "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIiEESt5arrayIPcLm1EEEEviT0_T1_",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {
+                                                                                    "count": 60,
+                                                                                    "device_id": "0",
+                                                                                    "device_type": "HIP",
+                                                                                    "time (ns)": 2563938
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:877@clear_cache",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:159@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=128]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 63037440,
+                                                                                                                            "count": 30,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 62914560.0,
+                                                                                                                            "time (ns)": 103914
+                                                                                                                        }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=256]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 63037440,
+                                                                                                                            "count": 30,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 62914560.0,
+                                                                                                                            "time (ns)": 118671
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:160@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=128]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 3992371200,
+                                                                                                                            "count": 1900,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 3984588800.0,
+                                                                                                                            "time (ns)": 5376344
+                                                                                                                        }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=256]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 3927232512,
+                                                                                                                            "count": 1869,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 3919577088.0,
+                                                                                                                            "time (ns)": 6759901
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:172@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [],
+                                                                                "frame": {
+                                                                                    "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIiEESt5arrayIPcLm1EEEEviT0_T1_",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {
+                                                                                    "count": 15099,
+                                                                                    "device_id": "0",
+                                                                                    "device_type": "HIP",
+                                                                                    "time (ns)": 636875947
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:877@clear_cache",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:182@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            },
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=128]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 15992598528,
+                                                                                                                            "count": 7611,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 15961423872.0,
+                                                                                                                            "time (ns)": 24457651
+                                                                                                                        }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "children": [],
+                                                                                                                        "frame": {
+                                                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=256]",
+                                                                                                                            "type": "function"
+                                                                                                                        },
+                                                                                                                        "metrics": {
+                                                                                                                            "bytes": 15734145024,
+                                                                                                                            "count": 7488,
+                                                                                                                            "device_id": "0",
+                                                                                                                            "device_type": "HIP",
+                                                                                                                            "flops16": 15703474176.0,
+                                                                                                                            "time (ns)": 27201326
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                                "frame": {
+                                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                                                    "type": "function"
+                                                                                                                },
+                                                                                                                "metrics": {}
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "frame": {
+                                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                                                            "type": "function"
+                                                                                                        },
+                                                                                                        "metrics": {}
+                                                                                                    }
+                                                                                                ],
+                                                                                                "frame": {
+                                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                                                    "type": "function"
+                                                                                                },
+                                                                                                "metrics": {}
+                                                                                            }
+                                                                                        ],
+                                                                                        "frame": {
+                                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {}
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:150@kernel_call",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/testing.py:185@do_bench",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            }
+                                                        ],
+                                                        "frame": {
+                                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:164@_bench",
+                                                            "type": "function"
+                                                        },
+                                                        "metrics": {}
+                                                    }
+                                                ],
+                                                "frame": {
+                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:229@benchmark",
+                                                    "type": "function"
+                                                },
+                                                "metrics": {}
+                                            }
+                                        ],
+                                        "frame": {
+                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:240@run",
+                                            "type": "function"
+                                        },
+                                        "metrics": {}
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "children": [
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "children": [
+                                                                            {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "children": [],
+                                                                                        "frame": {
+                                                                                            "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=128]",
+                                                                                            "type": "function"
+                                                                                        },
+                                                                                        "metrics": {
+                                                                                            "bytes": 2101248,
+                                                                                            "count": 1,
+                                                                                            "device_id": "0",
+                                                                                            "device_type": "HIP",
+                                                                                            "flops16": 2097152.0,
+                                                                                            "time (ns)": 4610
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "frame": {
+                                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/launch.py:45@enter",
+                                                                                    "type": "function"
+                                                                                },
+                                                                                "metrics": {}
+                                                                            }
+                                                                        ],
+                                                                        "frame": {
+                                                                            "name": "/workspace/lib/python3.12/site-packages/triton/profiler/hooks/hook.py:47@enter",
+                                                                            "type": "function"
+                                                                        },
+                                                                        "metrics": {}
+                                                                    }
+                                                                ],
+                                                                "frame": {
+                                                                    "name": "/workspace/lib/python3.12/site-packages/triton/knobs.py:424@__call__",
+                                                                    "type": "function"
+                                                                },
+                                                                "metrics": {}
+                                                            }
+                                                        ],
+                                                        "frame": {
+                                                            "name": "/workspace/lib/python3.12/site-packages/triton/backends/amd/driver.py:828@__call__",
+                                                            "type": "function"
+                                                        },
+                                                        "metrics": {}
+                                                    }
+                                                ],
+                                                "frame": {
+                                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:744@run",
+                                                    "type": "function"
+                                                },
+                                                "metrics": {}
+                                            }
+                                        ],
+                                        "frame": {
+                                            "name": "/workspace/lib/python3.12/site-packages/triton/runtime/autotuner.py:252@run",
+                                            "type": "function"
+                                        },
+                                        "metrics": {}
+                                    }
+                                ],
+                                "frame": {
+                                    "name": "/workspace/lib/python3.12/site-packages/triton/runtime/jit.py:370@<lambda>",
+                                    "type": "function"
+                                },
+                                "metrics": {}
+                            }
+                        ],
+                        "frame": {
+                            "name": "/workspace/user/triton/matmulbias.py:232@nonfusion_matmulbias",
+                            "type": "function"
+                        },
+                        "metrics": {}
+                    }
+                ],
                 "frame": {
-                    "name": "_ZN2at6native29vectorized_elementwise_kernelILi4ENS0_11FillFunctorIiEESt5arrayIPcLm1EEEEviT0_T1_",
+                    "name": "/workspace/user/triton/matmulbias.py:307@<module>",
                     "type": "function"
                 },
-                "metrics": {
-                    "count": 21264,
-                    "device_id": "0",
-                    "device_type": "HIP",
-                    "time (ns)": 889389031
-                }
-            },
-            {
-                "children": [],
-                "frame": {
-                    "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=128]",
-                    "type": "function"
-                },
-                "metrics": {
-                    "bytes": 26124816384,
-                    "count": 12433,
-                    "device_id": "0",
-                    "device_type": "HIP",
-                    "flops16": 26073890816.0,
-                    "time (ns)": 44651775
-                }
-            },
-            {
-                "children": [],
-                "frame": {
-                    "name": "bias_kernel [M=1024, N=1024] [BM=128, BN=256]",
-                    "type": "function"
-                },
-                "metrics": {
-                    "bytes": 26124816384,
-                    "count": 12433,
-                    "device_id": "0",
-                    "device_type": "HIP",
-                    "flops16": 26073890816.0,
-                    "time (ns)": 47389090
-                }
-            },
-            {
-                "children": [],
-                "frame": {
-                    "name": "matmul_kernel [M=1024, N=1024, K=1024] [BM=128, BN=128 BK=64]",
-                    "type": "function"
-                },
-                "metrics": {
-                    "bytes": 10745806848,
-                    "count": 1708,
-                    "device_id": "0",
-                    "device_type": "HIP",
-                    "flops16": 3667902070784.0,
-                    "time (ns)": 38672021
-                }
+                "metrics": {}
             }
         ],
         "frame": {
